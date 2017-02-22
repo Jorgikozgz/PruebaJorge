@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:wicket="http://wicket.apache.org">
+<head>
+</head>
+<body>
+	<div class="row">
+		<form wicket:id="formListFilm" class="form-group">
+			<div>
+				<input wicket:id="nameFilm" class="form-control"
+					placeholder="introduzca un nombre de la peli"></input> 
+				<input wicket:id="dateOfPremier" class="form-control"
+					placeholder="introduzca una fecha de estreno"></input> 
+				<input type="submit" class="btn btn-primary">
+			</div>
+		</form>
+	</div>
+
+	<div class="row">
+		<div class="alert-info" wicket:id="feedbackMessage">[feedbackMessage]</div>
+	</div>
+
+	<div wicket:id="film-group">
+		<span wicket:id="filmName"></span> ||	<span wicket:id="dateOfPremier"></span>
+	</div>
+
+</body>
+</html>
